@@ -9,9 +9,9 @@ here are some screenshots of various algorithm to detect credit card fraud
 
 
 ![image](https://github.com/Akhilesh-kumar-10/20BCS9907_AKHILESH_KUMAR_SMUR_MINI_PROJECT/assets/86221348/edeb20aa-63b6-4183-89ef-3f5776fd5fea)
-this is the piechart which shows the distrbution of data
+this is the piechart which shows the distribution of data
 ![image](https://github.com/Akhilesh-kumar-10/20BCS9907_AKHILESH_KUMAR_SMUR_MINI_PROJECT/assets/86221348/78bba96e-8b1f-4ee8-a756-80d9ff4d0b6a)
-this the decision tree algorithm
+this is the decision tree algorithm
 
 ![image](https://github.com/Akhilesh-kumar-10/20BCS9907_AKHILESH_KUMAR_SMUR_MINI_PROJECT/assets/86221348/e84b4624-80e7-42a2-9a65-2e6398619253)
 now this is the accuracy and area under the curve for the logistic resgression.
