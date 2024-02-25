@@ -8,7 +8,7 @@ install.packages("rpart.plot")
  install.packages("pROC")
  install.packages("ROSE")
  
- 
+
  # ---------------- LOADING LIBRARIES REQUIRED ------------------------------
  library(caret)
  library(rpart)
@@ -65,7 +65,7 @@ install.packages("rpart.plot")
  labels = paste0(labels,"%")
  pie(table(credit_card$Class),labels,col = c("blue","red"),
      main = "Pie Chart of Credit Card Transactions")
- 
+  #20bcs9907 Akhilesh kumar
  # ---------------------- DATA SPLITTING -------------------------------------
  rows = nrow(credit_card)
  cols = ncol(credit_card)
@@ -123,34 +123,5 @@ install.packages("rpart.plot")
  roc.curve(credit_card.testc$Class,credit_card.testc$Pred,plotit = TRUE,
            col="green",main = "ROC curve for Random Forest Algorithm",
            col.main="darkgreen")
- 
- # ----------------------- XGBOOST ALGORITHM --------------------------------
- labels <- credit_card.train$Class
- y <- recode(labels, '0' = 0, "1" = 1)
- xgb <- xgboost(data = data.matrix(credit_card.train[,-31]), 
-                label = y,
-                eta = 0.1,
-                gamma = 0.1,
-                max_depth = 10, 
-                nrounds = 300, 
-                objective = "binary:logistic",
-                colsample_bytree = 0.6,
-                verbose = 0,
-                nthread = 7,
-                set.seed(42)
- )
- xgb_pred <- predict(xgb, data.matrix(credit_card.test))
- 
- credit_card.testc$Pred = 0L
- credit_card.testc$Pred[xgb_pred>0.5] = 1L
- credit_card.testc$Pred = factor(credit_card.testc$Pred)
- 
- confusionMatrix(credit_card.testc$Pred,credit_card.testc$Class)
- 
- roc.curve(credit_card.testc$Class,credit_card.testc$Pred,plotit = TRUE,
-           col="blue",main = "ROC curve for XGBoost Algorithm",
-           col.main="darkblue")
- 
- # ------------------------- THE END ----------------------------------------
- # Hence, we can say that XGBOOST Algorithm was successful in predicting most
- # of the frauds (87/95) with an accuracy score of 99.96% and AUC of 0.910
+ #-------------------20bcs9907 Akhilesh kumar--------------------------------------------
+#the random forest algorithm showed the highest accuracy
