@@ -4,7 +4,7 @@ In this mini project, we embarked on a comprehensive exploration of credit card 
 
 Subsequently, we delved into data visualization, employing density plots and a pie chart to illuminate the distribution of fraud and non-fraud transactions. To facilitate model training and evaluation, we meticulously split the dataset into training and testing sets. Four distinct algorithms were implemented and assessed: Logistic Regression, Decision Tree, Random Forest, and XGBoost.
 
-In the conclusive phase of the mini project, a thorough comparison of the models was conducted, revealing that the Random Forest algorithm exhibited the highest accuracy of 99.96%. This finding underscores the efficacy of Random Forest in credit card fraud detection, showcasing its capability to discern fraudulent transactions with remarkable precision. The mini project not only demonstrated the application of diverse regression models but also highlighted the superiority of Random Forest for robust fraud detection in credit card transactions.
+In the conclusive phase of the mini project, a thorough comparison of the models was conducted, revealing that the Random Forest algorithm exhibited the highest accuracy of 99.06%. This finding underscores the efficacy of Random Forest in credit card fraud detection, showcasing its capability to discern fraudulent transactions with remarkable precision. The mini project not only demonstrated the application of diverse regression models but also highlighted the superiority of Random Forest for robust fraud detection in credit card transactions.
 here are some screenshots of various algorithm to detect credit card fraud
 
 
